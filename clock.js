@@ -1,6 +1,8 @@
 var span = document.querySelector("#time")
 var div=document.querySelector("div")
-window.addEventListener("load",div.requestFullscreen)
+document.addEventListener("dblclick",()=>{
+  document.documentElement.requestFullscreen();
+})
 
 
 
