@@ -1,12 +1,10 @@
 
 body{
-    background-color:black;
+    background-color:#FF5B5C;
 }
 p{
-    color:#c3c3c3;
+    color:#ffffff;
     font-size: 150px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Karla', sans-serif;
     text-align: center;
-    vertical-align: middle;
-    mix-blend-mode: difference;
 }

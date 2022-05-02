@@ -1,11 +1,12 @@
 var span = document.querySelector("#time")
+var div=document.querySelector("div")
+window.addEventListener("load",div.requestFullscreen)
 
 
 
 function getTime(){
   var d= new Date();
-  // var hours=d.getHours()
-  var hours=12
+  var hours=d.getHours()
   var format = (hours>=12)?"PM":"AM"
   hours=(hours>12)?hours-12:hours
   hours = (hours<10)?"0"+hours:hours
