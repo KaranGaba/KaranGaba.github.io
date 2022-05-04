@@ -3,9 +3,6 @@ var div=document.querySelector("div")
 document.addEventListener("dblclick",()=>{
   document.documentElement.requestFullscreen();
 })
-
-
-
 function getTime(){
   var d= new Date();
   var hours=d.getHours()
