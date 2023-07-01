@@ -12,6 +12,7 @@ function getTime(){
   var minutes = d.getMinutes()
   var seconds = d.getSeconds()
   minutes = (minutes<10)?"0"+minutes:minutes
+  seconds = (seconds<10)?"0"+seconds:seconds
   span.textContent = hours + ":" + minutes + ":" + seconds + format;
 }
 
