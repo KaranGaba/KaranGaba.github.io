@@ -10,8 +10,9 @@ function getTime(){
   hours=(hours>12)?hours-12:hours
   hours = (hours<10)?"0"+hours:hours
   var minutes = d.getMinutes()
+  var seconds = d.getSeconds()
   minutes = (minutes<10)?"0"+minutes:minutes
-  span.textContent = hours + ":" + minutes + format;
+  span.textContent = hours + ":" + minutes + ":" + seconds + format;
 }
 
 setInterval(getTime,1000)
