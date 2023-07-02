@@ -1,4 +1,5 @@
-var span = document.querySelector("#time")
+var time = document.querySelector("#time")
+var fullDate = document.querySelector("#date")
 var div=document.querySelector("div")
 document.addEventListener("dblclick",()=>{
   document.documentElement.requestFullscreen();
@@ -13,7 +14,18 @@ function getTime(){
   var seconds = d.getSeconds()
   minutes = (minutes<10)?"0"+minutes:minutes
   seconds = (seconds<10)?"0"+seconds:seconds
-  span.textContent = hours + ":" + minutes + ":" + seconds + format;
+  time.textContent = hours + ":" + minutes + ":" + seconds + format;
+  getTodaysDate()
+}
+function getTodaysDate(){
+  var d= new Date();
+  var date=d.getDate()
+  var month=d.getMonth()
+  var year=d.getFullYear()
+  var monthArray=["January","Febuary","March","April","May","June","July","August","September","October","November","December"]
+  date = (date<10)?"0"+date:date
+  fullDate.textContent = monthArray[month] + " " + date + ", " + year;
 }
 
 setInterval(getTime,1000)
+
